@@ -38,5 +38,13 @@ module objects {
         public Reset(): void {
 
         }
+
+        public CheckBounds(): void {
+
+        }
+
+        public Move(): void {
+            
+        }
     }
 }

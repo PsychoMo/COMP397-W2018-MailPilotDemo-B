@@ -35,6 +35,10 @@ var objects;
         };
         GameObject.prototype.Reset = function () {
         };
+        GameObject.prototype.CheckBounds = function () {
+        };
+        GameObject.prototype.Move = function () {
+        };
         return GameObject;
     }(createjs.Bitmap));
     objects.GameObject = GameObject;
