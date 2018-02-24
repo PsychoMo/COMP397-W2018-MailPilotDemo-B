@@ -1,9 +1,9 @@
 module scenes {
     export class PlayScene extends objects.Scene {
         // Private Instance Variables
-        
+        private _ocean: objects.Ocean;
 
-        
+
         // Public Properties
 
         // Constructor
@@ -20,17 +20,18 @@ module scenes {
 
         // Initialize Game Variables and Objects
         public Start(): void {
-           
+            this._ocean = new objects.Ocean(this.assetManager);
             this.Main();
         }
 
         public Update(): void {
-            
+            this._ocean.Update();
         }
 
         // This is where the fun happens
         public Main(): void {
-            
+            // add the ocean to the scene
+            this.addChild(this._ocean);
         }
     }
 }
